@@ -11,6 +11,7 @@ class sGameStateMenu : public sGameState
         virtual ~sGameStateMenu();
     protected:
     private:
+        static sGameStateMenu instance;
 };
 
 #endif // SGAMESTATEMENU_H

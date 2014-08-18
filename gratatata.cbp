@@ -52,6 +52,7 @@
 		<Unit filename="include/sGameStateIntro.h" />
 		<Unit filename="include/sGameStateMenu.h" />
 		<Unit filename="include/sGameStatePlay.h" />
+		<Unit filename="include/sStateManager.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/lAbstract_object.cpp" />
 		<Unit filename="src/lBullet.cpp" />
@@ -62,6 +63,7 @@
 		<Unit filename="src/sGameStateIntro.cpp" />
 		<Unit filename="src/sGameStateMenu.cpp" />
 		<Unit filename="src/sGameStatePlay.cpp" />
+		<Unit filename="src/sStateManager.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />

@@ -11,6 +11,7 @@ class sGameStatePlay : public sGameState
         virtual ~sGameStatePlay();
     protected:
     private:
+        static sGameStatePlay instance;
 };
 
 #endif // SGAMESTATEPLAY_H

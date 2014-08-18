@@ -11,6 +11,7 @@ class sGameStateIntro : public sGameState
         virtual ~sGameStateIntro();
     protected:
     private:
+        static sGameStateIntro instance;
 };
 
 #endif // SGAMESTATEINTRO_H
