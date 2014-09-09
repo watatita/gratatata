@@ -3,6 +3,7 @@
 lEnemy::lEnemy()
 {
     //ctor
+    e_type=E_ENEMY;
 }
 
 lEnemy::~lEnemy()

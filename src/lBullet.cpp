@@ -3,6 +3,7 @@
 lBullet::lBullet()
 {
     //ctor
+    e_type=E_BULLET;
 }
 
 lBullet::~lBullet()
