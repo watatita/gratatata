@@ -6,32 +6,25 @@
 		<Option pch_mode="2" />
 		<Option compiler="gcc" />
 		<Build>
-			<Script file="lib_finder.script" />
 			<Target title="Debug">
-				<Option output="../build/bin/Debug/gratatata" prefix_auto="1" extension_auto="1" />
-				<Option working_dir="../build/bin/Debug" />
-				<Option object_output="../build/obj/Debug" />
+				<Option output="bin/Debug/gratatata" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="E:/project2/irrlicht-1.8.1/bin/Win32-gcc" />
+				<Option object_output="obj/Debug/" />
 				<Option type="1" />
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-g" />
-					<Add option="-D__TESTDEBUG__" />
 					<Add directory="include" />
-					<Add directory="$(Box2D)" />
 				</Compiler>
-				<Linker>
-					<Add library="$(Box2D)\build\Box2D\libBox2D.a" />
-				</Linker>
 			</Target>
 			<Target title="Release">
-				<Option output="../build/bin/Release/gratatata" prefix_auto="1" extension_auto="1" />
-				<Option working_dir="../build/bin/Release" />
-				<Option object_output="../build/obj/Release" />
+				<Option output="bin/Release/gratatata" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="E:/project2/irrlicht-1.8.1/bin/Win32-gcc" />
+				<Option object_output="obj/Release/" />
 				<Option type="0" />
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-O2" />
-					<Add option="-D__RELEASE__" />
 					<Add directory="include" />
 				</Compiler>
 				<Linker>
@@ -50,8 +43,6 @@
 			<Add library="gdi32" />
 			<Add directory="E:/project2/irrlicht-1.8.1/lib/Win32-gcc" />
 		</Linker>
-		<Unit filename="include/fMathGenerator.h" />
-		<Unit filename="include/kEventReceiver.h" />
 		<Unit filename="include/lAbstract_object.h" />
 		<Unit filename="include/lBullet.h" />
 		<Unit filename="include/lEnemy.h" />
@@ -62,12 +53,7 @@
 		<Unit filename="include/sGameStateMenu.h" />
 		<Unit filename="include/sGameStatePlay.h" />
 		<Unit filename="include/sStateManager.h" />
-		<Unit filename="include/test_debug.h">
-			<Option target="Debug" />
-		</Unit>
 		<Unit filename="main.cpp" />
-		<Unit filename="src/fMathGenerator.cpp" />
-		<Unit filename="src/kEventReceiver.cpp" />
 		<Unit filename="src/lAbstract_object.cpp" />
 		<Unit filename="src/lBullet.cpp" />
 		<Unit filename="src/lEnemy.cpp" />
@@ -78,9 +64,6 @@
 		<Unit filename="src/sGameStateMenu.cpp" />
 		<Unit filename="src/sGameStatePlay.cpp" />
 		<Unit filename="src/sStateManager.cpp" />
-		<Unit filename="src/test_debug.cpp">
-			<Option target="Debug" />
-		</Unit>
 		<Extensions>
 			<code_completion />
 			<envvars />
