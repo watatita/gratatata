@@ -9,11 +9,8 @@ class lHero : public lAbstract_object
     public:
         lHero();
         virtual ~lHero();
-
+    protected:
     private:
-        bool direction;
-        u32 frame;
-
 };
 
 #endif // LHERO_H
