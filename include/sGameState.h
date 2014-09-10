@@ -4,11 +4,11 @@
 
 enum eGameStates
 {
+    ES_EXIT,
     ES_NULL,
     ES_INTRO,
     ES_MENU,
-    ES_PLAY,
-    ES_EXIT
+    ES_PLAY
 };
 
 class sGameState
@@ -20,6 +20,8 @@ class sGameState
         virtual void onLogic() = 0;
         virtual void onRender() = 0;
         virtual void onDeactivate() = 0;
+        void setNextState(int n_state);
+        int  getNextState();
     protected:
         irr::IrrlichtDevice* device;
         int nextState;
