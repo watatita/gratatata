@@ -1,5 +1,6 @@
 
 #include <irrlicht.h>
+#include <sStateManager.h>
 
 using namespace irr;
 
@@ -16,27 +17,12 @@ int main(int argc, char** argv)
     IrrlichtDevice *device =
         createDevice(EDT_OPENGL, dimension2d<u32>(640, 480), 16,
             false, false, false, 0);
-
-    device->setWindowCaption(L"Gratatata sidescroll");
-
-    video::IVideoDriver* driver = device->getVideoDriver();
-    scene::ISceneManager* smgr = device->getSceneManager();
-//    IGUIEnvironment* guienv = device->getGUIEnvironment();
-
-
-    while(device->run())
-    {
-
-        driver->beginScene(true, true, SColor(0,200,200,200));
-
-        smgr->drawAll();
-        guienv->drawAll();
-
-        driver->endScene();
-    }
-
-
-    device->drop();
+    #ifdef __TESTDEBUG__
+    printf("its debug\n");
+    #endif // __DEBUG__
+    sStateManager testGame(device);
+    testGame.init();
+    testGame.run();
 
     return 0;
 }
