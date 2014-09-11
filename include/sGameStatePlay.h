@@ -18,6 +18,7 @@
 #define CON_STAGE_DEPTH 1
 
 using namespace irr;
+using namespace irr::video;
 
 class sGameStatePlay : public sGameState
 {
