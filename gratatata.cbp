@@ -7,20 +7,26 @@
 		<Option compiler="gcc" />
 		<Build>
 			<Target title="Debug">
-				<Option output="bin/Debug/gratatata" prefix_auto="1" extension_auto="1" />
-				<Option working_dir="E:/project2/irrlicht-1.8.1/bin/Win32-gcc" />
-				<Option object_output="obj/Debug/" />
+				<Option output="../Build/gratata/bin/Debug/gratatata" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="../Build/gratata/bin/Debug" />
+				<Option object_output="../Build/gratata/obj/Debug" />
 				<Option type="1" />
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-g" />
+					<Add directory="$(irrlicht)/include" />
+					<Add directory="$(Box2D)" />
 					<Add directory="include" />
 				</Compiler>
+				<Linker>
+					<Add library="$(irrlicht)\lib\Win32-gcc\libIrrlicht.a" />
+					<Add library="$(Box2D)\\Build\Box2D\libBox2D.a" />
+				</Linker>
 			</Target>
 			<Target title="Release">
-				<Option output="bin/Release/gratatata" prefix_auto="1" extension_auto="1" />
-				<Option working_dir="E:/project2/irrlicht-1.8.1/bin/Win32-gcc" />
-				<Option object_output="obj/Release/" />
+				<Option output="../Build/gratata/bin/Debug/gratatata" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="../Build/gratata/bin/Debug" />
+				<Option object_output="../Build/gratata/obj/Debug" />
 				<Option type="0" />
 				<Option compiler="gcc" />
 				<Compiler>
@@ -43,6 +49,8 @@
 			<Add library="gdi32" />
 			<Add directory="E:/project2/irrlicht-1.8.1/lib/Win32-gcc" />
 		</Linker>
+		<Unit filename="include/fMathGenerator.h" />
+		<Unit filename="include/kEventReceiver.h" />
 		<Unit filename="include/lAbstract_object.h" />
 		<Unit filename="include/lBullet.h" />
 		<Unit filename="include/lEnemy.h" />
@@ -54,6 +62,8 @@
 		<Unit filename="include/sGameStatePlay.h" />
 		<Unit filename="include/sStateManager.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="src/fMathGenerator.cpp" />
+		<Unit filename="src/kEventReceiver.cpp" />
 		<Unit filename="src/lAbstract_object.cpp" />
 		<Unit filename="src/lBullet.cpp" />
 		<Unit filename="src/lEnemy.cpp" />
