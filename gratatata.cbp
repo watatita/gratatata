@@ -7,9 +7,9 @@
 		<Option compiler="gcc" />
 		<Build>
 			<Target title="Debug">
-				<Option output="../Build/gratata/bin/Debug/gratatata" prefix_auto="1" extension_auto="1" />
-				<Option working_dir="../Build/gratata/bin/Debug" />
-				<Option object_output="../Build/gratata/obj/Debug" />
+				<Option output="gratatata" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="$(Build)/gratata/bin/Debug" />
+				<Option object_output="$(Build)/gratata/obj/Debug" />
 				<Option type="1" />
 				<Option compiler="gcc" />
 				<Compiler>
@@ -19,14 +19,16 @@
 					<Add directory="include" />
 				</Compiler>
 				<Linker>
-					<Add library="$(irrlicht)\lib\Win32-gcc\libIrrlicht.a" />
-					<Add library="$(Box2D)\\Build\Box2D\libBox2D.a" />
+					<Add library="libIrrlicht.a" />
+					<Add library="libBox2D.a" />
+					<Add directory="$(irrlicht)/lib/Win32-gcc" />
+					<Add directory="$(Box2D)/Build/Box2D" />
 				</Linker>
 			</Target>
 			<Target title="Release">
-				<Option output="../Build/gratata/bin/Debug/gratatata" prefix_auto="1" extension_auto="1" />
-				<Option working_dir="../Build/gratata/bin/Debug" />
-				<Option object_output="../Build/gratata/obj/Debug" />
+				<Option output="$(Build)/gratata/bin/Release/gratatata" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="$(Build)/gratata/bin/Release" />
+				<Option object_output="$(Build)/gratata/obj/Release" />
 				<Option type="0" />
 				<Option compiler="gcc" />
 				<Compiler>
