@@ -7,7 +7,7 @@
 		<Option compiler="gcc" />
 		<Build>
 			<Target title="Debug">
-				<Option output="gratatata" prefix_auto="1" extension_auto="1" />
+				<Option output="$(Build)/gratata/bin/Debug/gratatata" prefix_auto="1" extension_auto="1" />
 				<Option working_dir="$(Build)/gratata/bin/Debug" />
 				<Option object_output="$(Build)/gratata/obj/Debug" />
 				<Option type="1" />
@@ -26,7 +26,7 @@
 				</Linker>
 			</Target>
 			<Target title="Release">
-				<Option output="$(Build)/gratata/bin/Release/gratatata" prefix_auto="1" extension_auto="1" />
+				<Option output="gratatata" prefix_auto="1" extension_auto="1" />
 				<Option working_dir="$(Build)/gratata/bin/Release" />
 				<Option object_output="$(Build)/gratata/obj/Release" />
 				<Option type="0" />
